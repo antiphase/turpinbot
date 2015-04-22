@@ -1,6 +1,6 @@
 #!/bin/bash
 
-server=antiphase.net
+server=chat.freenode.net
 port=6667
 nick='duck_turpin'
 user_name='pete'
@@ -29,7 +29,7 @@ sleep 10
 echo -e "JOIN ${channel} * \r\n"
 sleep 1
 
-while sleep $(( $RANDOM >> 9 ))  # 0-128s between proclamations
+while sleep $(( $RANDOM >> 8 ))  # 0-128s between proclamations
 do
   echo -e "PRIVMSG #tdtrs :${be_pete[ $(( $RANDOM * ${#be_pete[*]} >> 15 )) ]}\r\n"
 done
