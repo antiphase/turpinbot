@@ -2,21 +2,22 @@
 
 server=chat.freenode.net
 port=6667
-nick='duck_turpin'
-user_name='pete'
+nick=duck_turpin
+user_name=pete
 real_name='Pete Bot'
 channel='#tdtrs'
 
 be_pete=( \
-  'Fook'\
-  'Ahahahahaha'\
-  'I love Maggie'\
-  'Fookin PFY ate me bacon sarnie'\
-  'Jono Bacon'\
-  'Ive got some lovely HP Vectras you might be interested in'\
-  'Ubuntu née Canonical'\
-  'Fookin Zen fookin Cart'\
-  'PHPMail ate my fookin hamster'\
+  "Fook"\
+  "Ahahahahaha"\
+  "I love Maggie"\
+  "Fookin PFY ate me bacon sarnie"\
+  "Jono Bacon"\
+  "I've got some lovely HP Vectras you might be interested in"\
+  "Ubuntu née Canonical"\
+  "Fookin Zen fookin Cart"\
+  "PHPMail ate my fookin hamster"\
+  "You fookin idiot!"\
 )
 
 
@@ -31,5 +32,5 @@ sleep 1
 
 while sleep $(( $RANDOM >> 8 ))  # 0-128s between proclamations
 do
-  echo -e "PRIVMSG #tdtrs :${be_pete[ $(( $RANDOM * ${#be_pete[*]} >> 15 )) ]}\r\n"
+  echo -e "PRIVMSG ${channel} :${be_pete[ $(( $RANDOM * ${#be_pete[*]} >> 15 )) ]}\r\n"
 done
