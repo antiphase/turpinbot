@@ -16,9 +16,11 @@ beware the whitespace sensitivity! (Shout out to Python lovers)
 # USAGE
 
 Hack the settings at the top
+
 Run it
 
 # BUGS
 
 Written in bash
+
 Badly commented
